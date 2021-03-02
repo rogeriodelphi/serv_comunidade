@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+
+
+{% block body %}
+    
+    <div class="row">
+            <div class="col topo">
+                <h3 class="margem">Serviços no Polo de <b>gratuita à comunidade</b></h3>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://www.pi.senac.br/media/uploads/notice/2020/09/Gastronomia_site.png"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://www.pi.senac.br/media/uploads/notice/2020/10/site_nr1GC3t.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://www.pi.senac.br/media/uploads/notice/2020/09/biblioteca_digital_mat%C3%A9ria_lZqdt9I.png"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top"
+                                src="https://www.pi.senac.br/media/uploads/notice/2020/09/119471813_2823463061207854_2234808829329451569_n.jpg"
+                                alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-6 offset-md-3">
+                <div class="pagina-inicial">
+                    <div class="form-group">
+                        <label class="servicos" for="servicos">Serviços por Polo</label>
+                        <select class="form-control" id="servicos">
+                            <option value="">Selecione um Polo</option>
+                            <option value="Teresina">Teresina</option>
+                            <option value="Barras">Barras</option>
+                            <option value="Bom Jesus">Bom Jesus</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <a href="login.html" type="text" class="btn btn-primary">Cadastre-se</a>
+                    <!-- hard coded -->
+                    <!-- <a href="/usuario/login/" type="text" class="btn btn-primary">Tela de Login</a> -->
+                    <a href="{% url 'account:user_login' %}" type="text" class="btn btn-primary">Tela de Login</a>
+                </div>
+            </div>
+
+            <div class="row" id="polo">
+                <div class="col topo">
+                    <h3 class="margem">Serviços do Polo <b></b></h3>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://www.pi.senac.br/media/uploads/notice/2020/09/Gastronomia_site.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://www.pi.senac.br/media/uploads/notice/2020/10/site_nr1GC3t.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://www.pi.senac.br/media/uploads/notice/2020/09/biblioteca_digital_mat%C3%A9ria_lZqdt9I.png"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="https://www.pi.senac.br/media/uploads/notice/2020/09/119471813_2823463061207854_2234808829329451569_n.jpg"
+                                    alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up
+                                        the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+{% endblock body %}
+    

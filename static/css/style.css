@@ -1,0 +1,26 @@
+body{background: whitesmoke;margin-bottom: 200px}
+
+.margem{text-align: center;margin-top: 20px;font-size: 20px;}
+.formulario{background: white;padding: 40px 60px 100px;margin-top: 50px;margin-bottom: 100px;border-radius: 5px;border: 1px solid #ced4da;}
+#imagem{width: 100px;display: block;margin: 0 auto;}
+.check{margin-bottom: 20px;}
+
+form a{display: block;}
+form a {display: block;color: #f78b1f;}
+form a:hover{color: #f78b1f;}
+form button{margin-top: 20px;}
+
+.topo{margin-top: 50px}
+.topo .margem{margin-bottom: 20px;font-size: 30px;font-weight: 100;}
+.pagina-inicial{margin-top: 70px;}
+.pagina-inicial a{color: white!important}
+.pagina-inicial .servicos{font-size: 30px; font-weight: 100;}
+.pagina-inicial #servicos{height: 50px; font-size: 18px;}
+
+b, strong {
+    font-weight: bold;
+    color: #e5770a;
+}
+
+#polo {display: none}
+#polo.active{display: block}
