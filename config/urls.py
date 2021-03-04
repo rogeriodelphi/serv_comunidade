@@ -18,9 +18,11 @@ from django.urls import path, include
 
 from apps.atendimento import urls as atendimento_urls
 from apps.account import urls as account_urls
+from apps.cliente import urls as cliente_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('usuario/', include(account_urls, namespace='account')),
+    path('cliente/', include(cliente_urls, namespace='cliente')),
     path('', include(atendimento_urls, namespace='atendimento')),
 ]

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo!</title>
+</head>
+<body>
+    <h1>Seja bem vindo a área logada.</h1>
+    <br>
+    <br>
+    
+    {% if perms.cliente.add_cliente %}
+        <h2><a href="{% url 'cliente:adicionar_cliente' %}">Cadastrar novo cliente</a></h2>
+    {% endif %}
+        
+    <h2><a href="{% url 'account:user_logout' %}">Sair</a></h2>
+</body>
+</html>
