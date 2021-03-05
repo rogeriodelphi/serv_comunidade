@@ -44,8 +44,9 @@ venv*/
 #nootebook
 *.ipynb
 
-# Pastas
-#static/
-#media/
-#staticfiles/
-#mediafiles/
+# See the name for you IDE
+.idea
+# If you are using sqlite3
+
+# Name of your virtuan env
+.venv
